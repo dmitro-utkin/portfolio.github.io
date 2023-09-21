@@ -3,20 +3,43 @@
     margin: 0;
     box-sizing: border-box;
 }
-.container {
+body, html {
+    font-family: Poppins;
+}
+h2 {
+    color: #42446E;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    margin-bottom: 30px;
+}
+p {
+    width: 708px;
+    height: 104px;    
+    color: #666;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+header, main, footer {
+    margin: 0 auto;
+    padding: 10px;
+    width: auto;
+}
+
+/* Header */
+.header__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1204px;
-    height: 59px;
-    margin: 0 auto;
-    margin-top: 41px;
-    margin-bottom: 42px;
-}
-/* Header */
-.haeder {
-    width: 100%;
-    height: 60px;
+    max-width: 1240px;
+    height: 65px;
+    margin: 42px auto;
+    color: #666;
+    font-family: DM Sans;
 }
 .img-logo {
     width: 97px;
@@ -24,7 +47,6 @@
 }
 .header_user-nav {
     margin-left: auto;
-
 }
 .header_nav-list {
     display: flex;
@@ -32,9 +54,7 @@
 }
 .header_nav-item {
     margin-left: 50px;
-    color: #666;
     text-align: center;
-    font-family: DM Sans;
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
@@ -42,7 +62,7 @@
 }
 .header_nav-link {
     text-decoration: none;
-    color: #666;
+    
 }
 .header_contact-list {
     display: flex;
@@ -56,7 +76,6 @@
     margin-bottom: 23px;
     width: 32px;
     height: 32px;
-    flex-shrink: 0;
     fill: #666;
 }
 .facebook {
@@ -65,29 +84,29 @@
     margin-left: 20px;
     width: 34px;
     height: 34px;
-    flex-shrink: 0;
     fill: #666;
 }
 .github {
     margin-top: 6px;
     margin-bottom: 23.74px;
 }
-
 /* Main */
-main {
+.main__container {
+    max-width: 1240px;
     margin: 0 auto;
-    width: 1204px;
+    padding: 10px;
 }
-.main_container {
+/* Section1 */
+.desktop1 {
     display: flex;
     justify-content: space-between;
     margin-top: 246px;
-    margin-bottom: 348px;
+    margin-bottom: 300px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .meeting {
     width: 636px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-family: Poppins;
     font-size: 58px;
     font-style: normal;
     font-weight: 700;
@@ -99,7 +118,6 @@ main {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-family: Poppins;
     font-size: 58px;
     font-style: normal;
     font-weight: 700;
@@ -107,45 +125,28 @@ main {
     letter-spacing: -1px;
 }
 .my_photo {
-    width: 288px;
-    height: 300px;
-    padding-top: 26px;
+    width: 280px;
+    height: 280px;
+    margin-top: 40px;
 }
-
-/* Divider */
-.divider {
-    width: 1211px;
-    height: 5.682px;
-    flex-shrink: 0;
-    margin: 0 auto;
-    stroke-width: 2px;
-    opacity: 0.3;
-}
-
 /* Section2 */
-
 .desktop2 p {
-    width: 708px;
-    height: 104px;    
-    color: var(--dark-content, #666);
-    font-family: Poppins;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 26px;
-    margin-top: 38px;
-    margin-bottom: 38px;
+    margin: 38px 0;
+}
+.desktop2__block {
+    width: 704px;
+    height: 75px;
+    margin: 35px 0;
+    border-bottom: 2px solid #d9d0d0;
 }
 .dev-resources {
     display: flex;
     justify-content: space-between;
     width: 704px;
-    height: 40px;
-    flex-shrink: 0;
+    height: 28px;
 }
 .info {
-    color: var(--dark-content, #666);
-    font-family: Poppins;
+    color: #666;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -155,19 +156,17 @@ main {
 .button {
     width: 84px;
     height: 24px;
-    flex-shrink: 0;
     border-radius: 100px;
-    background: var(--Button-success, #D7FFE0);
+    background: #D7FFE0;
 }
 .button-text {
-    color: var(--Button-text, #018C0F);
+    display: block;
+    color: #018C0F;
     text-align: center;
-    font-family: Poppins;
     font-size: 10px;
     font-style: normal;
     font-weight: 600;
     line-height: 26px;
-    display: block;
 }
 .info-period {
     display: flex;
@@ -180,38 +179,142 @@ main {
     width: 252.333px;;
     height: 17px;
     flex-shrink: 0;
-    color: var(--light-Content, #A7A7A7);
-    font-family: Poppins;
+    color: #A7A7A7;
     font-size: 12px;
     font-style: normal;
     font-weight: 500;
     line-height: 28px;
     letter-spacing: 1px;
-    margin-left: 5px;
+    margin-left: 4px;
 }
-.block {
-    width: 704px;
-    margin: 35px 0;
-    border-bottom: 2px solid #d9d0d0;
+/* Section3 */
+.desktop3_tech-stack {
+    margin-top: 150px;
+    margin-bottom: 190px;
 }
+.tech_icon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 175px;
+    gap: 70px;
+}
+.tech_icon-item {
+    list-style: none;
+    width: 120px;
+    height: 120px;
+}
+/* Section4 */
+.projects {
+    margin-top: 160px;
+    margin-bottom: 110px;
+}
+.container_desktop4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: auto;
+}
+.projects_card {
+    width: 373px;
+    height: 580px;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.20);
+    color:#42446E;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 26px;
+    margin-bottom: 62px;
+}
+.projects_card h3 {
+    width: 300px;
+    color: #000;
+    text-align: center;
+    line-height: 26px;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    margin-top: 28px;
+    margin-left: 28px;
+    margin-bottom: 18px;
+}
+.projects_card p {
+    width: 314px;
+    height: 130px;
+    margin-left: 28px;
+    margin-bottom: 12px;
+}
+.tech_stack {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    margin-left: 28px;
+}
+.projects_card-link {
+    width: 300px;
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    text-decoration-line: underline;
+    margin-left: 28px;
+    display: flex;
+    justify-content: space-between;
+}
+.projects_card-link div {
+    display: flex;
+    margin-top: 21px;
+    margin-bottom: 25px;
+}
+.projects_card-link img{
+    padding-right: 5px;
+}
+/* Section5 */
+.my__email {
+    display: block;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    font-family: DM Sans;
+}
+.my__email h2{
+    color: #1E0E62;
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70px;
+    letter-spacing: -1px;
+    margin-top: 199px;
+    margin-bottom: 198px;
+}
+.my__email span {
+    background: var(--Gradient-Heading, linear-gradient(90deg, #13B0F5 -2.06%, #E70FAA 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
 /* Footer */
-.footer {
-    margin-top: auto;
-}
-.footer_container {
+.footer__container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1204px;
     height: 59px;
     margin: 0 auto;
-    margin-top: 41px;
-    margin-bottom: 42px;
+    font-family: DM Sans;
+    color: #42446E;
 }
 .footer_logo {
     width: 97px;
     height: 59px;
-    flex-shrink: 0;
 }
 .footer_contact {
     display: flex;
@@ -221,36 +324,26 @@ main {
     list-style-type: none;
     margin-bottom: 10px;
     margin-left: auto;
-
 }
 .footer_contact_email {
     display: flex;
     align-items: center;
+    margin-right: 48px;
 }
 .footer_contact_phone {
     display: flex;
     align-items: center;
+    margin-right: 63px;
 }
 .icon-phone {
-    width: 9.286px;
+    width: 16.176px;
     height: 24.098px;
-    flex-shrink: 0;
     margin-top: 8px;
-    margin-right: 5px;
-    color: var(--Solid-Heading, #42446E);
-    text-align: center;
-    font-family: Poppins;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 38px;
+    margin-right: 12px;
 }
 .phone {
     width: 220.19px;
     height: 16.488px;
-    flex-shrink: 0;
-    color: var(--Solid-Heading, #42446E);
-    font-family: DM Sans;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -259,24 +352,13 @@ main {
 .icon-email {
     width: 16.176px;
     height: 24.098px;
-    flex-shrink: 0;
-    margin-right: 5px;
+    margin-right: 12px;
     margin-top: 8px;
-    color: var(--Solid-Heading, #42446E);
-    text-align: center;
-    font-family: Poppins;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 38px; 
 }
 .email {
     width: 206.692px;
     height: 16.488px;
-    flex-shrink: 0;
-    color: var(--Solid-Heading, #42446E);
     font-size: 18px;
-    font-family: DM Sans;
     font-style: normal;
     font-weight: 400;
     line-height: 26px;
@@ -303,8 +385,6 @@ main {
     margin-bottom: 25px;
     width: 33px;
     height: 33px;
-    flex-shrink: 0;
-    fill: #666;
 }
 .linkedin {
     margin-left: 20px;
@@ -312,15 +392,16 @@ main {
     margin-bottom: 23px;
     width: 32px;
     height: 32px;
-    flex-shrink: 0;
-    fill: #666;
 }
-.divider {
+.footer__line {
+    max-width: 1240px;
+    margin: 30px auto;
+    padding: 10px;
     height: 5.682px;
-    flex-shrink: 0;
     stroke-width: 2px;
-    stroke: var(--dark-content, #666);
+    stroke: #666;
     opacity: 0.3;
+    margin-bottom: 10px;
 }
 .footer_nav-list {
     display: flex;
@@ -338,21 +419,16 @@ main {
 .footer_nav-item:first-child{
     margin-left: 0;    
 }
-.footer_nav-item:last-child{
-    margin-right: 25px;    
+.footer_nav-item {
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
 }
 .footer_nav-link {
     text-decoration: none;
-    color: #666;
-}
-.footer_nav-item {
-    color: #666;
-    text-align: center;
-    font-family: DM Sans;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 26px;
+    color: #42446E;
 }
 .footer_text {
     display: flex;
@@ -360,7 +436,7 @@ main {
     flex-direction: row;
     align-content: stretch;
     justify-content: space-evenly;
-    color: var(--dark-content, #666);
+    color: #666;
     text-align: center;
     font-family: Poppins;
     font-size: 18px;
@@ -368,37 +444,11 @@ main {
     font-weight: 400;
     line-height: 26px
 }
-.name {
+.footer_text span {
     margin: auto 5px;
     background: var(--Gradient-Heading, linear-gradient(90deg, #13B0F5 -2.06%, #E70FAA 100%));
-    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-family: Poppins;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 26px;
-}
-.love {
-    margin: auto 5px;
-    background: var(--Gradient-Heading, linear-gradient(90deg, #13B0F5 -2.06%, #E70FAA 100%));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: Poppins;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 26px;
-}
-.coffee {
-    margin: auto 5px;
-    background: var(--Gradient-Heading, linear-gradient(90deg, #13B0F5 -2.06%, #E70FAA 100%));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: Poppins;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -406,7 +456,6 @@ main {
 }
 
 /* Media */
-
 @media ((min-width:768px) and (max-width:992px)) {
     body {
         background-color: rgb(237, 238, 237);
@@ -464,10 +513,11 @@ main {
         margin-bottom: 23.74px;
     }
     main {
+        padding: 10px;
         margin: 0 auto;
         width: auto;
     }
-    .main_container {
+    .desktop1 {
         display: flex;
         justify-content: space-between;
         margin-top: auto;
@@ -518,7 +568,7 @@ main {
         height: 40px;
     }
     .info {
-        color: var(--dark-content, #666);
+        color: #666;
         font-family: Poppins;
         font-size: 20px;
         font-style: normal;
@@ -529,12 +579,11 @@ main {
     .button {
         width: 84px;
         height: 24px;
-        flex-shrink: 0;
         border-radius: 100px;
-        background: var(--Button-success, #D7FFE0);
+        background: #D7FFE0;
     }
     .button-text {
-        color: var(--Button-text, #018C0F);
+        color:#018C0F;
         text-align: center;
         font-family: Poppins;
         font-size: 10px;
@@ -600,8 +649,7 @@ main {
         margin-top: 25px;
         margin-bottom: 25px;
         width: 35px;
-        height: 35px;
-        flex-shrink: 0;
+        height: 35px;        
         fill: #666;
     }
     .linkedin {
@@ -609,13 +657,11 @@ main {
         margin-top: 24px;
         margin-bottom: 23px;
         width: 32px;
-        height: 32px;
-        flex-shrink: 0;
+        height: 32px;        
         fill: #666;
     }
     .divider {
-        height: 5.682px;
-        flex-shrink: 0;
+        height: 5.682px;        
         stroke-width: 2px;
         stroke: var(--dark-content, #666);
         opacity: 0.3;
@@ -679,7 +725,6 @@ main {
         line-height: 26px;
     }
 }
-
 @media ((min-width: 480px) and (max-width:768px)) {
     body {
         background-color: rgb(237, 238, 237);
@@ -966,7 +1011,6 @@ main {
         font-weight: 400;
     }
 }
-
 @media (max-width:480px) {
     body {
         background-color:rgb(233, 233, 233);
