@@ -10,16 +10,16 @@ header, main, footer{
 }
 h2{
     color: #42446E;
-    font-size: 42px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 26px;
-    margin: 30px auto
+    font-size:42px;
+    font-style:normal;
+    font-weight:700;
+    line-height:26px;
+    margin:30px auto
 }
 p{
     width:auto;
     height:104px;
-    color: #666;
+    color:#666;
     font-size:18px;
     font-style:normal;
     font-weight:400;
@@ -29,12 +29,12 @@ p{
 /* Header */
 .header{
     padding-bottom:0;
-    position: fixed;
+    position:fixed;
     background-color: #FFF;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;    
+    top:0;
+    left:0;
+    right:0;
+    z-index:100;    
 }
 .header_dropdown{
     display: none;
@@ -52,8 +52,8 @@ p{
     font-family:DM Sans
 }
 .img-logo{
-    width: 97px;
-    height: 59px
+    width:97px;
+    height:59px
 }
 .header_user-nav{
     margin-left:auto;
