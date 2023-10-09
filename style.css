@@ -1,6 +1,7 @@
 *{padding: 0;margin: 0;box-sizing: border-box}
 body, html{
-    font-family:Poppins
+    font-family:Poppins;
+    font-style:normal
 }
 :root{
     --background-color:#fff;
@@ -12,30 +13,31 @@ body, html{
     --My_email_color:#1E0E62
 }
 .dark-theme{
-    --background-color: #191919;
-    --text-color: #666666;
-    --light-Content: #A7A7A7;
-    --Solid-Heading: #CCC;
+    --background-color:#191919;
+    --text-color:#666666;
+    --light-Content:#A7A7A7;
+    --Solid-Heading:#CCC;
     --Proj-Card-Back-Color:#363636;
     --Proj-Card-Link-Color:#fff;
     --My_email_color:#A7A7A7
 }
 body{
     overflow-x:hidden;
-    background: var(--background-color);
-    color: var(--text-color);
-    transition: background 0.7s, color 0.7s
+    background:var(--background-color);
+    color:var(--text-color);
+    transition:background 0.7s, color 0.7s
 }
 header, main, footer{
     margin:0 auto;
     padding:10px;
-    width:auto
+    width:auto;    
+    background:var(--background-color);
+    transition:background 0.8s, color 0.8s;
 }
 h1{color:var(--Solid-Heading)}
 h2{
     color:var(--Solid-Heading);
-    font-size: clamp(22px, 2.5cqw, 48px);
-    font-style:normal;
+    font-size: clamp(22px, 2.5cqw, 48px);    
     font-weight:700;
     line-height:26px;
     margin:30px auto
@@ -49,20 +51,21 @@ p{
     font-weight:400;
     line-height:26px;
 }
+.img-logo{
+    width:clamp(40px,7cqw,97px);
+    height:auto
+}
 
 /* Header */
 .header{
     padding-bottom:0;
     position:fixed;
-    background: var(--background-color);
-    transition: background 0.8s, color 0.8s;
     top:0;
     left:0;
-    right:0;
-    z-index:100    
+    right:0  
 }
 .header_dropdown{
-    display: none;
+    display:none;
 }
 .header__container{
     display:flex;
@@ -73,12 +76,8 @@ p{
     margin:42px auto;
     margin-bottom:0;
     padding:10px;
-    color:var(--text-color) #666;
+    color:var(--text-color);
     font-family:DM Sans
-}
-.img-logo{
-    width:97px;
-    height:59px
 }
 .header_user-nav{
     margin-left:auto;
@@ -93,13 +92,12 @@ p{
     margin-left:50px;
     text-align:center;
     font-size:20px;
-    font-style:normal;
     font-weight:500;
     line-height:26px
 }
 .header_nav-link{
     text-decoration: none;
-    color: var(--light-Content)
+    color:var(--light-Content)
 }
 .header_contact-list{
     height:59px;
@@ -135,44 +133,44 @@ p{
     background:none;
     max-width:1220px;
     margin:0px auto;
-    padding-right: 10px;
+    padding-right:10px
 }
 .toggle-btn {
-    background: #666;
-    color: #FFF;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 135px;
-    height: 30px;
-    border-radius: 20px;
-    cursor: pointer
+    background:linear-gradient(90deg,#13B0F5 -2.06%,#E70FAA 100%);
+    color:#FFF;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:135px;
+    height:30px;
+    border-radius:20px;
+    cursor:pointer
 }
 .toggle-btn img{
-    width: 30px;
-    height: 30px;
-    margin-left: 10px;
+    width:30px;
+    height:30px;
+    margin-left:10px
 }
-
 /* Main */
 .main__container{
     max-width:1220px;
     margin:0 auto;
     padding:10px
 }
-
 /* Section1 */
 .desktop1{
     display:flex;
     justify-content:space-between;
-    margin-top:220px;
-    margin-bottom: 350px;
+    margin-top:320px;
+    margin-bottom:350px;
 }
 .meeting{
     width:636px;
     text-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
     font-size:58px;
-    font-style:normal;font-weight:700;line-height:70px;letter-spacing:-1px
+    font-weight:700;
+    line-height:70px;
+    letter-spacing:-1px
 }
 .meeting_name{
     background:linear-gradient(90deg,#13B0F5 -2.06%,#E70FAA 100%);
@@ -186,18 +184,12 @@ p{
     letter-spacing:-1px
 }
 .my_photo{
-    width: 280px;
-    height: 280px;
-    margin-top: 40px
+    width:280px;
+    height:280px;
+    margin-top:40px
 }
 
 /* Section2 */
-.title{
-    display:block;
-    align-items:center;
-    margin:0 auto;
-    text-align:center;
-}
 .desktop2 p{
     margin:38px 0
 }
@@ -220,7 +212,6 @@ p{
 .info{
     color:#666;
     font-size:14px;
-    font-style:normal;
     font-weight:400;
     line-height:28px;
     letter-spacing:1px
@@ -235,8 +226,9 @@ p{
     display:block;
     color:#018C0F;
     text-align:center;
-    font-size: 10px;
-    font-style: normal;font-weight: 600;line-height: 26px
+    font-size:10px;
+    font-weight:600;
+    line-height:26px
 }
 .info-period{
     display:flex;
@@ -253,39 +245,41 @@ p{
     height:25px
 }
 .info-period-education{
-    display: flex;
-    justify-content: space-between
+    display:flex;
+    justify-content:space-between
 }   
 .info-period-icon{
-    margin-top: 8px
+    margin-top:8px
 }
 .organization{
-    width:252.333px;
+    width:252px;
     height:12px;
     flex-shrink:0;
     color:#A7A7A7;
     font-size:12px;
-    font-style:normal;font-weight:500;line-height:28px;letter-spacing:0;margin-left:4px}
-
-
+    font-weight:500;
+    line-height:28px;
+    letter-spacing:0;
+    margin-left:4px
+}
 /* Section3 */
 .desktop3{
         width:auto
     }
 .desktop3_tech-stack{
-    margin-top: 300px;
-    margin-bottom: 110px
+    margin-top:300px;
+    margin-bottom:110px
 }
 .desktop3_tech-stack p{
-    margin: 0 auto;
-    justify-items: center;
+    margin:0 auto;
+    justify-items:center
 }
 .tech_icon{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 175px;
-    gap: 70px
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    margin-bottom:175px;
+    gap:70px
 }
 .tech_icon-item{
     list-style: none;
@@ -318,23 +312,22 @@ p{
     line-height:26px;
     margin-bottom:62px
 }
+.projects_card-header_img{
+    width: 100%;
+}
 .projects_card h3{
     width:300px;
-    color:var(--Solid-Heading);
-    text-align:center;
-    line-height:26px;
-    font-size:28px;
-    font-style:normal;
+    font-size:clamp(14px,3cqw,28px);
     font-weight:500;
     margin-top:28px;
     margin-left:28px;
     margin-bottom:18px
 }
 .projects_card p{
-    width: 314px;
-    height: 130px;
-    margin-left: 28px;
-    margin-bottom: 12px
+    width:314px;
+    height:130px;
+    margin-left:28px;
+    margin-bottom:12px
 }
 .tech_stack{
     color:var(--Solid-Heading);
@@ -374,7 +367,7 @@ p{
     font-family:DM Sans
 }
 .my__email h2{
-    color: var(--My_email_color);
+    color:var(--My_email_color);
     font-size:58px;
     font-style:normal;
     font-weight:700;
@@ -389,7 +382,6 @@ p{
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent
 }
-
 /* Footer */
 .footer__container{
     max-width:1220px;
@@ -399,15 +391,11 @@ p{
     flex-wrap:wrap;
     justify-content:space-between;
     align-content:center;
-    height:59px;
-    font-family:DM Sans;
-    color:var(--Solid-Heading)
+    font-family:DM Sans
 }
 .footer_logo{
-    width:97px;
-    height:59px
+    margin-top:6px
 }
-.img-logo{color: var(--Solid-Heading);}
 .footer_contact{
     display:flex;
     height:59px;
@@ -424,34 +412,30 @@ p{
     margin-right:63px
 }
 .icon-phone{
-    width:16.176px;
-    height:24.098px;
+    width:16px;
+    height:24px;
     margin-right:12px
 }
 .phone{
-    width:220.19px;
-    height:16.488px;
+    width:220px;
+    height:16px;
     font-size:18px;
-    font-style:normal;
-    font-weight: 400;
     line-height:26px
 }
 .footer_contact_email{
-    display: flex;
-    align-items: flex-start;
-    margin-right: 48px
+    display:flex;
+    align-items:flex-start;
+    margin-right:48px
 }
 .icon-email{
-    width: 16.176px;
-    height: 24.098px;
-    margin-right: 12px
+    width:16px;
+    height:24px;
+    margin-right:12px
 }
 .email{
-    width:206.692px;
-    height:16.488px;
+    width:206px;
+    height:16px;
     font-size:18px;
-    font-style:normal;
-    font-weight:400;
     line-height:26px
 }
 .footer_contact-list{
@@ -502,7 +486,7 @@ p{
 .footer_nav-list{
     display:flex;
     list-style-type:none;
-    padding-left: 0
+    padding-left:0
 }
 .footer_nav-item{
     display:flex;
@@ -571,10 +555,6 @@ p{
         margin:0 auto;
         box-shadow:1px 0px 20px 10px rgb(13 99 255 / 20%)
     }
-    .img-logo{
-        width:87px;
-        height:49px
-    }
     .header_nav-item{
         margin-left:20px;
         font-size:18px
@@ -600,7 +580,7 @@ p{
     }
     .tech_icon{
         gap:100px;
-        row-gap: 70px;
+        row-gap:70px;
     }
     .container_desktop4 {
         justify-content: space-around;
@@ -612,33 +592,25 @@ p{
     .projects_card{
         width:45%;
         height:auto;
-        background:#FFF;
         margin-bottom:45px;
         box-shadow:5px 5px 8px 5px rgb(13 99 255 / 20%)
     }
-    .projects_card img{
-        width: 100%
-    }
     .projects_card h3{
-        line-height: 20px;
-        margin-top: 20px;
-        margin-left: 10px;
-        margin-bottom: 25px
+        line-height:20px;
+        margin-top:20px;
+        /* margin-left:10px; */
+        margin-bottom:25px
     }
     .projects_card p{
-        width:100%;
+        width:90%;
         height:auto;
         font-size:16px;
-        margin-left:10px;
-        margin-bottom:10px;padding-right:10px
+        margin-bottom:10px;
+        padding-right:10px
     }
     .tech_stack{
-        font-size: 14px;
-        line-height: 20px;
-        margin-left: 10px
-    }
-    .projects_card-link{
-        margin-left: 10px;
+        font-size:14px;
+        line-height:20px;
     }
     .projects_card-link div{
         margin-top:12px;
@@ -657,7 +629,7 @@ p{
         margin-top:10px
     }
     .footer_logo{
-        width:auto
+        margin-top:12px
     }
     .footer_contact{
         margin-right:auto
@@ -701,10 +673,6 @@ p{
         height:auto;
         margin:5px auto;
         box-shadow:0px 4px 8px 5px rgb(13 99 255 / 20%)
-    }
-    .img-logo{
-        width:57px;
-        height:35px
     }
     .header_user-nav{
         margin-right:10px
@@ -802,7 +770,6 @@ p{
     .projects_card{
         width:47%;
         height:auto;
-        background:#FFF;
         margin-bottom:45px;
         box-shadow:5px 5px 8px 5px rgb(13 99 255 / 20%)
     }
@@ -812,9 +779,8 @@ p{
     .projects_card h3{
         line-height:0;
         margin-top:15px;
-        margin-left:5px;
-        margin-bottom:20px;
-        font-size:17px;width:auto
+        margin-left:10px;
+        margin-bottom:20px
     }
     .projects_card p{
         width:100%;
@@ -844,7 +810,7 @@ p{
     .projects_card-link img{
         padding-right:5px;
         width:20%
-    }
+    } */
     .my__email h2{
         font-size:30px;
         line-height:70px;
@@ -853,10 +819,6 @@ p{
     .footer__container{
         height:40px;
         align-items:center
-    }
-    .footer_logo{
-        width:57px;
-        height:auto;
     }
     .footer_contact{
         display:block;
@@ -935,14 +897,13 @@ p{
         font-size:14px;
         line-height:20px
     }
-    .header__container {
+    .header__container{
         height:30px;
         margin:10px auto;
         box-shadow:0px 4px 8px 5px rgb(13 99 255 / 20%);
-        padding: 0;
+        padding:0
     }
-    .img-logo {
-        width:40px;
+    .img-logo{
         margin-top:5px
     }
     .header_user-nav{
@@ -1152,7 +1113,7 @@ p{
     .projects_card h3{
         width:150px;
         text-align:center;
-        font-size:14px;
+        /* font-size:14px; */
         margin-top:0;
         margin-left:10px;
         margin-bottom:10px
@@ -1228,11 +1189,11 @@ p{
         padding-bottom:3px
     }
     .footer_contact {
-        width: 131px;
-        display: flex;
-        flex-direction: column;
-        margin-top: 10px;
-        align-content: center;
+        width:131px;
+        display:flex;
+        flex-direction:column;
+        margin-top:10px;
+        align-content:center
     }
     .footer_contact_phone{
         margin-right:auto;
