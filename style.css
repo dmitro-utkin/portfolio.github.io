@@ -10,7 +10,8 @@ body, html{
     --Solid-Heading:#42446E;
     --Proj-Card-Back-Color:#fff;
     --Proj-Card-Link-Color:#000;
-    --My_email_color:#1E0E62
+    --My_email_color:#1E0E62;
+    --Btn-color:#666666
 }
 .darkTheme{
     --background-color:#191919;
@@ -19,7 +20,8 @@ body, html{
     --Solid-Heading:#CCC;
     --Proj-Card-Back-Color:#363636;
     --Proj-Card-Link-Color:#fff;
-    --My_email_color:#A7A7A7
+    --My_email_color:#A7A7A7;
+    --Btn-color:#CCC
 }
 body{
     overflow-x:hidden;
@@ -27,6 +29,7 @@ body{
     color:var(--text-color)
 }
 header, main, footer{
+    max-width:1220px;
     margin:0 auto;
     padding:10px;
     width:auto;    
@@ -45,14 +48,15 @@ p{
     width:auto;
     height:104px;
     color:var(--light-Content);
-    font-size:clamp(12px, 2cqw, 18px);
+    font-size:clamp(14px, 2cqw, 18px);
     font-style:normal;
     font-weight:400;
-    line-height:26px;
+    line-height:clamp(14px, 2cqw, 26px);
 }
 .img-logo{
-    width:clamp(40px,7cqw,97px);
-    height:auto
+    width:clamp(40px,7vw,97px);
+    height:auto;
+    margin-top:10px
 }
 
 /* Header */
@@ -64,24 +68,20 @@ p{
     right:0  
 }
 .header_dropdown{
-    display:none;
+    display:none
 }
 .header__container{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    max-width:1220px;
     height:65px;
     margin:42px auto;
-    margin-bottom:0;
     padding:10px;
     color:var(--text-color);
     font-family:DM Sans
 }
 .header_user-nav{
-    margin-left:auto;
-    margin-right:0;
-    display:flex    
+    margin-left:auto
 }
 .header_user-nav ul{
     list-style-type:none;
@@ -89,19 +89,18 @@ p{
 }
 .header_nav-item{
     margin-left:50px;
-    text-align:center;
-    font-size:20px;
-    font-weight:500;
-    line-height:26px
+    font-size:clamp(12px,2vw,20px);
+    font-weight:500
+}
+.header_nav-item:first-child{
+    margin-left:0;
 }
 .header_nav-link{
     text-decoration: none;
     color:var(--light-Content)
 }
 .header_contact-list{
-    height:59px;
     display:flex;
-    flex-direction:row;
     align-items:center;
     margin-left:20px;
     list-style-type:none
@@ -109,7 +108,7 @@ p{
 .github{
     margin-left:20px;
     margin-top:25px;
-    margin-bottom:23.74px
+    margin-bottom:24px
 }
 .facebook{
     margin-left:20px;
@@ -131,25 +130,23 @@ p{
     justify-content:flex-end;
     background:none;
     max-width:1220px;
-    margin:0px auto;
-    padding-right:clamp(-10px,1cqw,10px);
-    font-size: clamp(12px,4cqw,16px);
+    margin-left:clamp(0px,2cqw,10px);
+    font-size: clamp(12px,2cqw,16px)
 }
 .toggle-btn {
-    background:linear-gradient(90deg,#13B0F5 -2.06%,#E70FAA 100%);
-    color:#FFF;
+    background:var(--Btn-color);
+    color:var(--background-color);
     display:flex;
     align-items:center;
     justify-content:center;
-    width:clamp(80px,16cqw,135px);
-    height:auto;
+    width:clamp(60px,10cqw,100px);
+    height:clamp(15px,3cqw,30px);
     border-radius:20px;
     cursor:pointer
 }
 .toggle-btn img{
-    width:clamp(20px,5cqw,30px);
-    height:auto;
-    margin-left:clamp(0px,1cqw,10px)
+    width:clamp(20px,3cqw,30px);
+    height:clamp(20px,3cqw,30px)
 }
 /* Main */
 .main__container{
@@ -167,26 +164,21 @@ p{
 .meeting{
     width:636px;
     text-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-size:58px;
+    font-size:clamp(16px,5vw,58px);
     font-weight:700;
-    line-height:70px;
+    line-height:clamp(20px,5vw,70px);
     letter-spacing:-1px
 }
 .meeting_name{
     background:linear-gradient(90deg,#13B0F5 -2.06%,#E70FAA 100%);
     background-clip:text;
     -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
-    font-size:58px;
-    font-style:normal;
-    font-weight:700;
-    line-height:70px;
-    letter-spacing:-1px
+    -webkit-text-fill-color:transparent
 }
 .my_photo{
-    width:280px;
-    height:280px;
-    margin-top:40px
+    width:clamp(100px,22vw,290px);
+    height:clamp(100px,22vw,290px);
+    margin-top:30px
 }
 
 /* Section2 */
@@ -265,7 +257,7 @@ p{
 /* Section3 */
 .desktop3{
         width:auto
-    }
+}
 .desktop3_tech-stack{
     margin-top:300px;
     margin-bottom:110px
@@ -361,20 +353,15 @@ p{
 /* Section5 */
 .my__email{
     display:block;
-    align-items:center;
-    margin:0 auto;
     text-align:center;
     font-family:DM Sans
 }
 .my__email h2{
     color:var(--My_email_color);
     font-size:clamp(20px,5cqw,58px);
-    font-style:normal;
     font-weight:700;
     line-height:70px;
-    letter-spacing:-1px;
-    margin-top:199px;
-    margin-bottom:198px
+    margin:200px auto
 }
 .my__email span{
     background:linear-gradient(90deg,#13B0F5 -2.06%,#E70FAA 100%);
@@ -383,8 +370,7 @@ p{
     -webkit-text-fill-color:transparent
 }
 /* Footer */
-.footer__container{
-    max-width:1220px;
+.footer__container{    
     height:59px;
     margin:0 auto;
     display:flex;
@@ -392,9 +378,6 @@ p{
     justify-content:space-between;
     align-content:center;
     font-family:DM Sans
-}
-.footer_logo{
-    margin-top:6px
 }
 .footer_contact{
     display:flex;
@@ -460,7 +443,8 @@ p{
 }
 .contact-link-linkedin{
     margin-left:10px;
-    margin-top:4px;width:31px;
+    margin-top:4px;
+    width:31px;
     height:31px
 }
 .footer__line{
@@ -472,7 +456,7 @@ p{
     opacity:0.3
 }
 .footer__container-bottom{
-    max-width:1240px;
+    max-width:1220px;
     height:59px;
     margin:0 auto;
     display:flex;
@@ -537,6 +521,9 @@ p{
 
 /* Media */
 @media((min-width:992px) and (max-width:1200px)){
+    .header_nav-item{
+        margin-left:35px;
+    }
     .tech_icon{
         gap:150px;
         row-gap:60px
@@ -556,21 +543,13 @@ p{
         box-shadow:1px 0px 20px 10px rgb(13 99 255 / 20%)
     }
     .header_nav-item{
-        margin-left:20px;
-        font-size:18px
+        margin-left:12px
     }
     .meeting{
-        width:450px;
-        font-size:40px;
-        line-height: 60px
-    }
-    .meeting_name{
-        font-size: 40px
+        width:510px
     }
     .my_photo{
-        width:260px;
-        height:260px;
-        margin-top:20px
+        margin-top:15px
     }
     .desktop3{
         width:auto
@@ -629,7 +608,7 @@ p{
         margin-top:10px
     }
     .footer_logo{
-        margin-top:12px
+        margin-top:6px
     }
     .footer_contact{
         margin-right:auto
@@ -670,15 +649,16 @@ p{
         background-color:#FFF
     }
     .header__container{
-        height:auto;
+        height:40px;
         margin:5px auto;
         box-shadow:0px 4px 8px 5px rgb(13 99 255 / 20%)
     }
     .header_user-nav{
-        margin-right:10px
+        margin-right:0;
+        margin-left:0
     }
     .header_nav-item{
-        margin-left:5px;font-size:12px;
+        margin-left:5px;
         line-height:15px
     }
     .header_contact-list{
@@ -686,35 +666,27 @@ p{
     }
     .github{
         margin-left:5px;
-        width:25px
+        width:20px
     }
     .facebook{
         margin-left:5px;
-        width:28px
+        width:24px
     }
     .linkedin{
         margin-left:5px;
-        width:26px
+        width:22px
     }
     .desktop1{
         display:flex;
-        flex-direction:column-reverse;
-        margin:80px auto;
+        margin:180px auto;
         align-items:center
     }
     .meeting{
-        width: 450px;
-        padding-left:10px;
-        font-size:30px;
-        line-height:40px
-    }
-    .meeting_name{
-        font-size:30px
+        width: 430px;
+        letter-spacing:-2px
     }
     .my_photo{
-        width:180px;
-        height:200px;
-        margin-top:20px
+        margin-top: 0
     }
     .desktop2{
         margin-top:100px
@@ -726,7 +698,6 @@ p{
     .desktop2 p{
         width:auto;
         height:auto;
-        font-size:12px;
         line-height:18px
     }
     .desktop2__block{
@@ -815,6 +786,9 @@ p{
         height:40px;
         align-items:center
     }
+    .footer_logo{
+        margin-top:0
+    }
     .footer_contact{
         display:block;
         justify-content:center;
@@ -848,6 +822,7 @@ p{
         line-height:24px
     }  
     .contact-link-github{
+        width: 20px;
         margin-left:10px;
         margin-top:10px;
         margin-bottom:5px
@@ -855,13 +830,12 @@ p{
     .contact-link-facebook{
         margin-left:10px;margin-top:8px;
         margin-bottom:5px;
-        width:35px;height:35px
+        width:24px
     }
     .contact-link-linkedin{
         margin-left:10px;
         margin-top:4px;
-        width:31px;
-        height:31px
+        width:22px
     }
     .footer__container-bottom{
         height:40px;
@@ -887,9 +861,6 @@ p{
         text-align:center
     } 
     p{
-        width:auto;
-        font-size:14px;
-        line-height:20px;
         text-align:center
     }
     .header__container{
@@ -907,7 +878,7 @@ p{
     .header_dropdown{
         display:block;
         margin-left:auto;
-        margin-right:auto;
+        margin-right:40px;
         margin-top:-26px;
         font-size:12px
     }
@@ -918,7 +889,7 @@ p{
     }
     .header_dropdown ul{
         list-style:none;
-        width: auto;
+        width: auto
     }
     .header_dropdown > ul li a{
         display:block;
@@ -936,8 +907,7 @@ p{
     .header_dropdown li a:hover{
         background:linear-gradient(90deg,#13B0F5 -2.06%,#E70FAA 100%);
         color:#020202;
-        transition:all .2s ease;
-        opacity: 0.7;
+        transition:all .2s ease
     }
     .header_dropdown li ul{
         position:absolute;
@@ -948,7 +918,6 @@ p{
     .header_dropdown li:hover>ul{
         display:block
     }
-
     .header_contact-list{
         height:30px
     }
@@ -979,31 +948,17 @@ p{
         padding:0px
     }
     .desktop1{
-        margin:150px auto
-    }
-    .meeting {
-        font-size:16px;
-        line-height:20px;
-        width: 200px;
-        height: 100px
+        margin:200px auto
     }
     .meeting_name{
-        background:linear-gradient(90deg,#13B0F5 -2.06%,#E70FAA 100%);
-        -webkit-background-clip:text;
-        font-size:20px;
-        line-height:30px;
-        letter-spacing:-1px
+        letter-spacing:0px
     }
     .my_photo{
-        width:100px;
-        height:90px;
-        margin-top:12px;
-        margin-bottom:12px
+        margin-top:0
     }
-    .desktop2 p{
+    .desktop2 > p{
         margin:50px auto;
-        width: auto;
-        height: auto;
+        text-align:justify
     }
     .dev-resources{
         display:flex;
@@ -1058,7 +1013,7 @@ p{
         margin-bottom: 10px;
     }
     .desktop3_tech-stack{
-        margin-top:100px;
+        margin-top:200px;
         margin-bottom:0
     }
     .desktop3 h2{
@@ -1095,7 +1050,7 @@ p{
 
     }
     .projects{
-        margin-top:100px;
+        margin-top:200px;
         margin-bottom:0
     }
     .projects_card{
@@ -1108,19 +1063,16 @@ p{
         height:138px
     }
     .projects_card h3{
-        width:150px;
-        text-align:center;
-        /* font-size:14px; */
+        width:160px;
         margin-top:0;
-        margin-left:10px;
-        margin-bottom:10px
+        margin-left:10px
     }
     .projects_card p{
         width:170px;
         height:auto;
         margin-left:10px;
         font-size:12px;
-        line-height:14px
+        text-align:justify
     }
     .projects_card-text{
         font-size:12px;
@@ -1134,7 +1086,6 @@ p{
     }
     .projects_card-link{
         width:auto;
-        /* font-size:14px; */
         line-height:13px;
         margin-left:10px
     }
@@ -1156,6 +1107,9 @@ p{
         width:auto;
         align-items:center;
         flex-wrap:nowrap;
+    }
+    .footer_logo{
+        margin-top:10px
     }
     .contact-link-github{
         margin-left:10px;
