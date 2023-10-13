@@ -26,8 +26,13 @@ body, html{
 }
 body{
     overflow-x:hidden;
+    color:var(--text-color);
+    max-width:1220px;
+    margin:0 auto;
+    padding:10px;
+    width:auto;    
     background:var(--background-color);
-    color:var(--text-color)
+    transition:background 0.5s, color 0.5s
 }
 header, main, footer{
     max-width:1220px;
@@ -59,7 +64,7 @@ p{
     height:auto;
     margin-top:10px
 }
-#myEmailNeon{
+.myEmailNeon{
     display: none;
 }
 
@@ -298,7 +303,7 @@ p{
     flex-wrap:wrap;
     justify-content:space-between;
     height:auto;
-    margin-bottom:300px;
+    margin-bottom:360px;
 }
 .projects_card{
     width:373px;
@@ -360,6 +365,9 @@ p{
 }
 
 /* Section5 */
+.desktop5{
+    margin-bottom:300px;
+}
 .my__email{
     display:block;
     text-align:center;
@@ -378,7 +386,6 @@ p{
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent
 }
-
 
 /* Footer */
 .footer__container{    
@@ -859,8 +866,11 @@ p{
     }
 }
 @media(max-width:480px){
+    .myEmailNeon{
+        display: block;
+    }
     /* body{
-        background:yellow
+        background:black
     } */
     h2{
         text-align:center
@@ -1052,7 +1062,6 @@ p{
         display:flex;
         flex-wrap:wrap;
         justify-content:space-evenly
-
     }
     .projects{
         margin-top:200px;
@@ -1106,12 +1115,6 @@ p{
     }
     .my__email{
         display: none;
-    }
-    #myEmailNeon{
-        display: block;
-    }
-    .my__email h2{
-        line-height:40px
     }
     .footer__container{
         display: flex;
