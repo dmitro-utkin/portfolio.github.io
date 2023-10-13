@@ -11,7 +11,8 @@ body, html{
     --Proj-Card-Back-Color:#fff;
     --Proj-Card-Link-Color:#000;
     --My_email_color:#1E0E62;
-    --Btn-color:#666666
+    --Btn-color:#666666;
+    --background-color:#fff;
 }
 .darkTheme{
     --background-color:#191919;
@@ -57,6 +58,9 @@ p{
     width:clamp(40px,7vw,97px);
     height:auto;
     margin-top:10px
+}
+#myEmailNeon{
+    display: none;
 }
 
 /* Header */
@@ -376,9 +380,6 @@ p{
 }
 
 
-
-
-
 /* Footer */
 .footer__container{    
     height:59px;
@@ -544,9 +545,6 @@ p{
     
 }
 @media((min-width:768px) and (max-width:992px)){
-    body{
-        background-color:#FFF
-    }
     .header__container{
         margin:0 auto;
         margin:0 auto;
@@ -655,9 +653,6 @@ p{
     }
 }
 @media((min-width:480px) and (max-width:768px)){
-    body{
-        background-color:#FFF
-    }
     .header__container{
         height:40px;
         margin:5px auto;
@@ -864,9 +859,9 @@ p{
     }
 }
 @media(max-width:480px){
-    body{
-        background-color:#FFF
-    }
+    /* body{
+        background:yellow
+    } */
     h2{
         text-align:center
     } 
@@ -1108,6 +1103,12 @@ p{
         margin-top:10px;
         margin-bottom:10px;
         margin-right:auto
+    }
+    .my__email{
+        display: none;
+    }
+    #myEmailNeon{
+        display: block;
     }
     .my__email h2{
         line-height:40px

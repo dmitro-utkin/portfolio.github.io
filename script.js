@@ -4,6 +4,7 @@ let btnIcon = document.getElementById("btnIcon");
 let footerLogo = document.getElementById("footerLogo");
 let greensockDark = document.getElementById("greensockDark");
 let githubDark = document.getElementById("githubDark");
+let myEmailNeon = document.getElementById("myEmailNeon");
 
 btn.onclick = function () {
     let setTheme = document.body; 
@@ -25,6 +26,7 @@ btn.onclick = function () {
         footerLogo.src = "./Images/logo 11.svg";
         greensockDark.src = "./Images/desktop3/cib_greensock.svg";
         githubDark.src = "./Images/desktop3/akar-icons_github-fill.svg";
+
     } 
 
 

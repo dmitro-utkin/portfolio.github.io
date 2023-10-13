@@ -2,24 +2,23 @@ $color1: red;
 $color2: blue;
 
 .text-effect {
-    width: auto;
+    // width: auto;
     display: flex;
     justify-content: center;
     overflow: hidden;
     position: relative;
-    filter: contrast(120%) brightness(170%);
+    filter: contrast(110%) brightness(190%);
     margin: 0 auto;
 }
 
 .neon {
-    width: auto;
     position: relative;
-    background: #a7a7a7;
+    background: black;
     color: transparent;
         &::before, 
         &::after {
                     content: attr(data-text);
-                    color: rgb(255, 255, 255);    
+                    color:white);    
                     filter: blur(0.02em);    
                     position: absolute;
                     top: 0; left: 0;
@@ -40,7 +39,7 @@ $color2: blue;
 }
 
 .gradient {
-    background: linear-gradient(90deg,#13B0F5 -2.06%,#E70FAA 100%);
+    background:linear-gradient(45deg, $color1, $color2);
     mix-blend-mode: multiply;
 }
 
@@ -48,7 +47,7 @@ $color2: blue;
     animation: light 5s infinite linear;
     background: 
         radial-gradient(circle, white, transparent 25%) 0 0 / 25% 25%, 
-        radial-gradient(circle, white, #191919 25%) 50% 50% / 12.5% 12.5%;
+        radial-gradient(circle, white, black 25%) 50% 50% / 12.5% 12.5%;
     top: -100%; left: -100%;
     mix-blend-mode: color-dodge;
 }
@@ -60,10 +59,15 @@ $color2: blue;
 }
 
 .neon {
-    display: inline;
-    font-size: 58px;
-    font: 'Lato', sans-serif;
     text-align: center;
     margin: 0;
-        &:focus { outline: none; border: 1px dotted #191919; }
+        &:focus { outline: none; border: 1px dotted white; }
 }
+body {
+    background: black;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
