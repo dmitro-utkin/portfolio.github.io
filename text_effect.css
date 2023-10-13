@@ -1,0 +1,69 @@
+.text-effect {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  filter: contrast(120%) brightness(170%);
+  margin: 0 auto;
+}
+
+.neon {
+  width: auto;
+  position: relative;
+  background: #a7a7a7;
+  color: transparent;
+}
+.neon::before, .neon::after {
+  content: attr(data-text);
+  color: rgb(255, 255, 255);
+  filter: blur(0.02em);
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+.neon::after {
+  mix-blend-mode: difference;
+}
+
+.gradient,
+.spotlight {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.gradient {
+  background: linear-gradient(90deg, #13B0F5 -2.06%, #E70FAA 100%);
+  mix-blend-mode: multiply;
+}
+
+.spotlight {
+  animation: light 5s infinite linear;
+  background: radial-gradient(circle, white, transparent 25%) 0 0/25% 25%, radial-gradient(circle, white, #191919 25%) 50% 50%/12.5% 12.5%;
+  top: -100%;
+  left: -100%;
+  mix-blend-mode: color-dodge;
+}
+
+@keyframes light {
+  100% {
+    transform: translate3d(50%, 50%, 0);
+  }
+}
+.neon {
+  display: inline;
+  font-size: 58px;
+  font: "Lato", sans-serif;
+  text-align: center;
+  margin: 0;
+}
+.neon:focus {
+  outline: none;
+  border: 1px dotted #191919;
+}/*# sourceMappingURL=text_effect.css.map */

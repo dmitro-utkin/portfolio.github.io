@@ -2,6 +2,8 @@ let btn = document.getElementById("btn");
 let btnText = document.getElementById("btnText");
 let btnIcon = document.getElementById("btnIcon");
 let footerLogo = document.getElementById("footerLogo");
+let greensockDark = document.getElementById("greensockDark");
+let githubDark = document.getElementById("githubDark");
 
 btn.onclick = function () {
     let setTheme = document.body; 
@@ -14,11 +16,15 @@ btn.onclick = function () {
         btnIcon.src = "./Images/sun_icon.png";
         btnText.innerHTML = "Light";
         footerLogo.src = "./Images/logo_1_Dark.svg";
+        greensockDark.src = "./Images/desktop3/cib_greensock_dark.svg";
+        githubDark.src = "./Images/desktop3/akar-icons_github-fill_dark.svg";
     } else{
         theme = "LIGHT";
         btnIcon.src = "./Images/moon_icon.png";
         btnText.innerHTML = "Dark";
         footerLogo.src = "./Images/logo 11.svg";
+        greensockDark.src = "./Images/desktop3/cib_greensock.svg";
+        githubDark.src = "./Images/desktop3/akar-icons_github-fill.svg";
     } 
 
 
@@ -33,4 +39,6 @@ if(GetTheme === "DARK") {
     btnIcon.src = "./Images/sun_icon.png";
     btnText.innerHTML = "Light";
     footerLogo.src = "./Images/logo_1_Dark.svg";
+    greensockDark.src = "./Images/desktop3/cib_greensock_dark.svg";
+    githubDark.src = "./Images/desktop3/akar-icons_github-fill_dark.svg";
 }
