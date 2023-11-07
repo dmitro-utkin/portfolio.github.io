@@ -413,7 +413,9 @@ p{
     width:220px;
     height:16px;
     font-size:18px;
-    line-height:26px
+    line-height:26px;
+    text-decoration:none;
+    color:var(--text-color)
 }
 .footer_contact_email{
     display:flex;
@@ -429,7 +431,9 @@ p{
     width:206px;
     height:16px;
     font-size:18px;
-    line-height:26px
+    line-height:26px;
+    text-decoration:none;
+    color:var(--text-color)
 }
 .footer_contact-list{
     height:59px;
