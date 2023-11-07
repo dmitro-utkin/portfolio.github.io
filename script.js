@@ -15,14 +15,14 @@ btn.onclick = function () {
         theme = "DARK";
         btnIcon.src = "./Images/sun_icon.png";
         btnText.innerHTML = "Light";
-        footerLogo.src = "./Images/logo_1_Dark.svg";
+        footerLogo.src = "./Images/Logo_Footer_Dark.svg";
         greensockDark.src = "./Images/desktop3/cib_greensock_dark.svg";
         githubDark.src = "./Images/desktop3/akar-icons_github-fill_dark.svg";
     } else{
         theme = "LIGHT";
         btnIcon.src = "./Images/moon_icon.png";
         btnText.innerHTML = "Dark";
-        footerLogo.src = "./Images/logo 11.svg";
+        footerLogo.src = "./Images/Logo_Footer.svg";
         greensockDark.src = "./Images/desktop3/cib_greensock.svg";
         githubDark.src = "./Images/desktop3/akar-icons_github-fill.svg";
     } 
