@@ -83,6 +83,28 @@
   align-content:center;
   align-items:center;
 }
-.myEmailNeon {
-  
+
+/* --------------------- */
+
+
+@property --w {
+	syntax: '<number>';
+	initial-value: 0;
+	inherits: false;
+  linear-gradient(90deg,#13B0F5 -2.06%,#E70FAA 100%)
 }
+svg[height='0'] { position: absolute }
+
+.desktop5__contact_email {
+	--w: 0;
+	place-self: center;
+	background: 
+		linear-gradient(90deg, hsl(calc(var(--w)*1turn), 95%, 65%), hsl(calc(var(--w)*1turn + 90deg), 95%, 65%));
+	/* -webkit-background-clip: text; */
+	color: transparent;
+	font: 900 clamp(16px,5cqw,58px) arial black, sans-serif;	
+	text-align: center;
+	animation: w 4s linear infinite
+}
+
+@keyframes w { to { --w: 1 } }
