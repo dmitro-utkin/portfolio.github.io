@@ -279,6 +279,9 @@ p{
     gap:70px
 }
 .tech_icon-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     list-style: none;
     width: 120px;
     height: 120px
