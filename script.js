@@ -1,9 +1,9 @@
-let btn = document.getElementById("btn");
-let btnText = document.getElementById("btnText");
-let btnIcon = document.getElementById("btnIcon");
-let footerLogo = document.getElementById("footerLogo");
-let greensockDark = document.getElementById("greensockDark");
-let githubDark = document.getElementById("githubDark");
+const myPhoto = document.getElementById("myPhoto");
+const btn = document.getElementById("btn");
+const btnText = document.getElementById("btnText");
+const btnIcon = document.getElementById("btnIcon");
+const footerLogo = document.getElementById("footerLogo");
+const githubDark = document.getElementById("githubDark");
 
 btn.onclick = function () {
     let setTheme = document.body; 
@@ -13,11 +13,13 @@ btn.onclick = function () {
 
     if(setTheme.classList.contains("darkTheme")){
         theme = "DARK";
+        myPhoto.src = "./Images/my_photo-dark.jpg";
         btnIcon.src = "./Images/sun_icon.png";
         btnText.innerHTML = "Light";
         footerLogo.src = "./Images/Logo_Footer_Dark.svg";
         githubDark.src = "./Images/desktop3/akar-icons_github-fill_dark.svg";
     } else{
+        myPhoto.src = "./Images/my_photo.jpg";
         theme = "LIGHT";
         btnIcon.src = "./Images/moon_icon.png";
         btnText.innerHTML = "Dark";
